@@ -1,0 +1,31 @@
+Type,Numéro,Destination,Horaire
+Transilien,23593,Pontoise,21h11
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,21h12
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,21h12
+Eurostar,9063,London St. Pancras EST,21h13
+Transilien,RER B,Robinson,21h14
+Transilien,RER D,Malesherbes,21h15
+TER,49939,Laon,21h16
+Transilien,RER D,Goussainville,21h17
+Transilien,RER E,Haussmann Saint-Lazare,21h17
+Transilien,RER E,Chelles-Gournay,21h20
+Transilien,RER B,St-Rémy-les-Chevreuse,21h20
+Transilien,RER B,Mitry-Claye,21h21
+Transilien,RER B,Massy Palaiseau RER,21h23
+Transilien,RER D,Orry la Ville-Coye,21h23
+Transilien,RER E,Tournan,21h24
+TER,48541,Breteuil Embranchement,21h28
+Thalys,9395,Bruxelles Midi,21h55
+TGV,7097,Lille-Flandres,22h21
+TER,47919,Saint-Quentin,22h37
+Thalys,9401,Essen Hbf,06h01
+TER,47401,Beauvais,06h05
+Thalys,9303,Amsterdam CS,06h25
+Thalys,9403,Bruxelles-National-Aéroport,06h25
+Intercités,12001,Amiens,06h28
+TGV,7505,Boulogne-Ville,06h46
+TGV,7205,Dunkerque,06h46
+TER,47801,Compiègne,06h49
+Intercités,2003,Abbeville,06h58
+TER,48501,Saint-Just en Chaussée,07h10
+TER,47601,Creil,07h31

@@ -1,0 +1,33 @@
+Type,Numéro,Destination,Horaire
+Transilien,23569,Pontoise,19h11
+Transilien,RER B,St-Rémy-les-Chevreuse,19h11
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,19h12
+Transilien,RER D,Melun,19h12
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,19h12
+Eurostar,9055,London St. Pancras EST,19h13
+Transilien,RER E,Haussmann Saint-Lazare,19h13
+Transilien,25105,Sarcelles Saint-Brice,19h13
+Transilien,RER D,Villiers le Bel-Gonesse,19h13
+Transilien,RER B,Orsay Ville,19h14
+Transilien,RER D,Malesherbes,19h15
+Transilien,RER B,Mitry-Claye,19h15
+Transilien,24035,Saint-Leu la Forêt,19h15
+Transilien,RER E,Chelles-Gournay,19h16
+TGV,7281,Tourcoing,19h16
+Transilien,RER D,Goussainville,19h17
+Transilien,RER B,Massy Palaiseau RER,19h17
+Thalys,9381,Amsterdam CS,19h25
+Intercités,12023,Amiens,19h28
+Thalys,9483,Liège-Guillemins,19h34
+TER,47447,Beauvais,19h36
+Intercités,12323,Maubeuge,19h37
+TGV,7083,Lille-Flandres,19h46
+TER,47823,Compiègne,19h49
+TGV,7151,Valenciennes,19h52
+TER,47913,Saint-Quentin,20h07
+TER,49937,Laon,20h08
+TER,48537,Saint-Just en Chaussée,20h10
+TER,47615,Creil,20h49
+Thalys,9389,Bruxelles Midi,20h55
+Thalys,9401,Essen Hbf,06h01
+Thalys,9403,Bruxelles-National-Aéroport,06h25

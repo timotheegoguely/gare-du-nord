@@ -1,0 +1,587 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="SNCF"> 
+    <meta name="robots" content="ALL" />
+    <!-- Google -->
+    <meta name="google-site-verification" content="BPFtRTWIA3lilhZ5mQDkQ_4Wpp6z5AAiEdxELZB59-I" />
+    <!-- Bing -->
+    <meta name="msvalidate.01" content="8B551AF14D2565E14E06A9069D7A0091" />
+	<meta name="description" content="Gare SNCF de Paris Nord: Visualisez le tableau d'affichage des trains en temps réel, vérifier la voie, le quai d'arrivée de votre train et soyez informé des éventuels retards en gare de Paris Nord" />
+					<meta name="keywords" content="horaire SNCF, horaire train, quai, SNCF, horaire TGV, horaires RER" />
+					<title>Gare SNCF de Paris Nord: Horaires des trains à l'arrivée de la gare</title>    <!-- Favicon -->
+    <link rel="icon" type="image/gif" href="http://www.gares-en-mouvement.com/favicon.gif"  />
+    <link href="http://www.gares-en-mouvement.com/resources/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://www.gares-en-mouvement.com/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="http://www.gares-en-mouvement.com/resources/css/invalid.css" rel="stylesheet" type="text/css" media="all" />
+		    <!--[if lt IE 7]>
+        <link href="http://www.gares-en-mouvement.com/resources/css/ie.css" rel="stylesheet" type="text/css" media="all" />
+    <![endif]-->
+	    <script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/ua.js"></script>
+	    <script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript">
+	<!--/*--><![CDATA[//><!--
+	function WinTime(heure,min,sec,k){sec++;if(sec>59){min++;sec=0;}if(min>59){heure++;min=0;}if(heure>23){heure=0;}sec=sec+"";min=min+"";heure=heure+"";if(heure<10){if((heure.charAt(0)=="0")&&(heure.charAt(1)!="1")&&(heure.charAt(1)!="2")&&(heure.charAt(1)!="3")&&(heure.charAt(1)!="4")&&(heure.charAt(1)!="5")&&(heure.charAt(1)!="6")&&(heure.charAt(1)!="7")&&(heure.charAt(1)!="8")&&(heure.charAt(1)!="9")){heure="00";}else if(heure.charAt(0)!="0"){heure="0"+heure;}}if(min<10){if((min.charAt(0)=="0")&&(min.charAt(1)!="1")&&(min.charAt(1)!="2")&&(min.charAt(1)!="3")&&(min.charAt(1)!="4")&&(min.charAt(1)!="5")&&(min.charAt(1)!="6")&&(min.charAt(1)!="7")&&(min.charAt(1)!="8")&&(min.charAt(1)!="9")){min="00";}else if(min.charAt(0)!="0"){min="0"+min;}}if(sec<10){if((sec.charAt(0)=="0")&&(sec.charAt(1)!="1")&&(sec.charAt(1)!="2")&&(sec.charAt(1)!="3")&&(sec.charAt(1)!="4")&&(sec.charAt(1)!="5")&&(sec.charAt(1)!="6")&&(sec.charAt(1)!="7")&&(sec.charAt(1)!="8")&&(sec.charAt(1)!="9")){sec="00";}else if(sec.charAt(0)!="0"){sec="0"+sec;}}document.getElementById('heure').innerHTML=="";document.getElementById('heure').innerHTML='<span>'+heure+'<abbr title="heure"><span id="lid">:</span></abbr>'+min+'</span>';if(k%2==0)document.getElementById('lid').style.color='#ffffff';k++;setTimeout("WinTime('"+heure+"', '"+min+"', '"+sec+"', '"+k+"')",1000);}
+	//--><!]]>
+	</script>
+		<script type="text/javascript">
+	<!--/*--><![CDATA[//><!--
+	$(document).ready(function(){
+		
+		var pub_normal = $(".banniere").html();
+		var pub_anim = pub_normal.replace('pub_fixe.gif','pub.gif');
+		
+		$(".banniere").html(pub_anim);
+		var showOrHide = false;
+		//On affiche la pub animée
+		//$(".banniere").toggle();
+		//Affichage du lien
+		$(".anim").append('<p id="pub_link">Stopper la publicité</p>');
+		$("#pub_link").click(function(){
+			if(showOrHide == true){
+			  $(".banniere").html(pub_anim);
+			  showOrHide = false;
+			}else if(showOrHide == false){
+			  $(".banniere").html(pub_normal);
+			  showOrHide = true;
+			}							   
+			$(this).text($(this).text() == 'Stopper la publicité' ? 'Activer la publicité' : 'Stopper la publicité');
+		});
+	});
+	//--><!]]>
+	</script>
+    		<script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/jquery.bxSlider.min.js" defer="defer"></script>
+    <script type="text/javascript">
+	<!--/*--><![CDATA[//><!--
+	$(document).ready(function(){
+		$(".carousel_ul").css("display","block");
+		$(".carousel_ul").bxSlider({
+			displaySlideQty: 5,
+            moveSlideQty: 1,
+			prevImage: 'http://www.gares-en-mouvement.com/resources/images/prev.gif',
+	        nextImage: 'http://www.gares-en-mouvement.com/resources/images/next.gif'
+		});
+	});
+	//--><!]]>
+	</script>
+				     		<script type="text/javascript">
+	<!--/*--><![CDATA[//><!--
+	$(document).ready(function(){
+					
+		$(".infostempsreel_maj").append('<p id="refresh_link"><a href="#"><img src="http://www.gares-en-mouvement.com/resources/images/bt_actualiser.gif" alt=""  style="vertical-align:middle" width="20" height="19"/>Actualiser</a></p>');
+		
+		
+			
+		$("#refresh_link").click(function(){	
+			var link = $("#refresh_link").html();
+			$("#refresh_link").append('<img src="http://www.gares-en-mouvement.com/resources/images/loading_small.gif" style="vertical-align:middle;" />');
+			ajax_control();
+			$("#refresh_link").html(link);
+			return false;
+		});
+	});
+	
+	
+	function ajax_control(){
+		$.ajax({
+			url: "http://www.gares-en-mouvement.com/resources/include/ajax_tvs_tab.php",
+			type : "POST",
+			data: { ajax_call: "arr", gare : "frpno", type: ""  },
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("X-CSRF-Token", "754cec0f9bcbeb69be665892d51459ed75d79f59");
+			},
+			success: function(msg) {
+				if(!msg){
+						$(".notification").remove();
+						$(".infostempsreel_tgda table tbody").empty();
+						$(".infostempsreel_tgda table thead").css("visibility","hidden");
+						$(".infostempsreel_legende").css("visibility","hidden");
+						$(".infostempsreel_tgda").prepend('<div class="notification error"><div>Les horaires sont temporairement indisponibles.</div></div>');
+				}else{
+					if(msg == 'session_dead'){
+						window.location.reload();
+					}else{
+						$(".notification").remove();
+						$(".infostempsreel_tgda table thead").css("visibility","visible");
+						$(".infostempsreel_legende").css("visibility","visible");
+						$(".infostempsreel_tgda table tbody").html(msg);
+					}
+				}
+			}
+		});
+		$.ajax({
+			url: "http://www.gares-en-mouvement.com/resources/include/ajax_tvs_info.php",
+			type : "POST",
+			async : false,
+			data: { ajax_call: "arr", gare : "frpno" },
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("X-CSRF-Token", "754cec0f9bcbeb69be665892d51459ed75d79f59");
+			},
+			success: function(msg) {
+				$(".infostempsreel_ticc").html(msg);
+			}
+		});
+		
+		
+
+	}
+	//--><!]]>
+    </script>	
+	                 <!--[if IE]>
+	<script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/PIE.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){	
+		$('.border').each(function() {
+			PIE.attach(this);
+   		 });
+         $('.border_top').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.home').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('#map_contain').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('#sub_page li a').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.infostempsreel_ticc').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.ouverture_courant_true').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.ouverture_courant_false').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.submit_button').each(function() {
+			PIE.attach(this);
+   		 });
+		/* $('.notification').each(function() {
+			PIE.attach(this);
+   		 });*/
+		 $('.link_gauche a').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.link_droite a').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.unlink_gauche').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.unlink_droite').each(function() {
+			PIE.attach(this);
+   		 });
+		 $('.link_gauche').each(function() {
+			PIE.attach(this);
+   		 });
+	});
+	</script>
+	
+    <![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.tvs_sub2').each(function(){
+			$(this).addClass('sub_menu').removeClass('tvs_sub2');				
+		});
+		$('.tvs_sub2_active').each(function(){
+			$(this).addClass('sub_menu_active').removeClass('tvs_sub2_active');				
+		});
+		
+		
+							
+		
+	});
+	</script>
+	<!--	<script type="text/javascript">
+	$(document).ready(function() {
+		$('.tvs_sub2').each(function(){
+			$(this).addClass('sub_menu').removeClass('tvs_sub2');				
+		});
+		$('.tvs_sub2_active').each(function(){
+			$(this).addClass('sub_menu_active').removeClass('tvs_sub2_active');				
+		});
+
+	});
+	</script>
+
+	-->
+		<script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/menu.js" defer="defer" ></script>
+		<script type="text/javascript" src="http://www.gares-en-mouvement.com/resources/scripts/jquery.bgiframe.min.js" defer="defer" ></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.sub_menu').bgiframe();
+		$('.sub_menu_active').bgiframe();
+	});
+	</script>
+    	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-18321046-1']);
+	  _gaq.push(['_setDomainName', '.gares-en-mouvement.com']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body style="background:#c6c1cc url('http://www.gares-en-mouvement.com/resources/images/bck_vide.jpg') no-repeat left top;" ><a href="#list_page" class="access">Aller au menu</a><a href="#content_wrapper" class="access">Aller au contenu</a><div class="wrapper">
+<div id="nav_contain">
+	<div id="nav_data">
+		<div id="logo"><a href="http://www.gares-en-mouvement.com/"><img src="http://www.gares-en-mouvement.com/resources/images/logo.png" alt="Logo Gares &amp; Connexions (retour &agrave; l'accueil de Gares en Mouvement)" width="150" height="40" /></a></div>
+		<a id="gare-co" href="http://www.gares-connexions.com/" target="_blank" title="La branche Gares &amp; Connexions (nouvelle fen&ecirc;tre)">La branche Gares &amp; Connexions</a><br /> 
+		<div id="langue">
+			<ul>
+			<li><a href="http://www.gares-en-mouvement.com/fr/frpno/horaires-temps-reel/arr/" lang="fr"><img title="Fran&ccedil;ais" alt="Fran&ccedil;ais" src="http://www.gares-en-mouvement.com/resources/images/langue/fr.gif" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/en/frpno/horaires-temps-reel/arr/" lang="en"><img title="English" src="http://www.gares-en-mouvement.com/resources/images/langue/en.gif" alt="English" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/de/frpno/horaires-temps-reel/arr/" lang="de"><img title="Deutsch" src="http://www.gares-en-mouvement.com/resources/images/langue/de.gif" alt="Deutsch" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/it/frpno/horaires-temps-reel/arr/" lang="it"><img title="Italiano" src="http://www.gares-en-mouvement.com/resources/images/langue/it.gif" alt="Italiano" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/es/frpno/horaires-temps-reel/arr/" lang="es"><img title="Espa&ntilde;ol" src="http://www.gares-en-mouvement.com/resources/images/langue/es.gif" alt="Espa&ntilde;ol" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/nl/frpno/horaires-temps-reel/arr/" lang="nl"><img title="Nederlands" src="http://www.gares-en-mouvement.com/resources/images/langue/nl.gif" alt="Nederlands" width="18" height="18" /></a></li>			</ul>
+		</div><!-- fin div langue -->
+		<div id="heure">
+			<script type="text/javascript">
+				$(document).ready(function(){
+					WinTime(17, 57, 36,1)
+				});
+			</script>
+			<noscript><span>17<abbr title="Heure">:</abbr>57</span></noscript>
+		</div>
+		
+		<ul id="social"><li><a href="https://www.facebook.com/garedeparisnord" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/f_logo.gif" alt="Logo Facebook" title="Devenez fan de notre page (nouvelle fen&ecirc;tre)"/></a></li><li><a href="http://twitter.com/infos_gares" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/t_logo.gif" alt="Logo Twitter" title="Suivez nous sur Twitter (nouvelle fen&ecirc;tre)"/></a></li></ul>		
+		<div id="welcome">
+			<h1>En direct de Paris Nord</h1>        
+		</div><!-- fin div welcome -->
+		
+		
+		<div class="cls"></div>
+	</div><!-- fin div nav_data -->
+</div><!-- fin div nav_contain -->
+<div id="news_contain">		<div class="news_content border" >
+		<strong><i> <p>Votre avis nous int&eacute;resse ! <a target="_blank" href=" http://www.lagareetmoi.com/survey_start/1.html">Donner votre avis sur LES GARES</a><br />
+<br />
+R&eacute;guli&egrave;rement, des nouvelles gares sont consultables sur le site : n'h&eacute;sitez pas &agrave; rechercher par r&eacute;gion ou d&eacute;partement.</p>
+<p>Pour Monaco, cherchez la gare dans la r&eacute;gion &quot;Principaut&eacute; de Monaco&quot; ou cliquez sur son emplacement dans la carte.</p>
+<p>&nbsp;<strong><span style="color: #984806">De nouvelles machines <a href="https://www.facebook.com/hashtag/selecta"><span style="color: #984806; text-decoration: none; text-underline: none">Selecta</span></a> vont &ecirc;tre&nbsp;install&eacute;es dans les gares.<br />
+</span><b><span style="color: #984806"><span style="color: #984806; text-decoration: none; text-underline: none">Votez pour votre couleur de distributeur pr&eacute;f&eacute;r&eacute;e et gagnez de nombreux cadeaux <a target="_blank" href="http://goo.gl/BCaAoq">ici </a>!</span></span></b>.</strong></p>
+<p>&nbsp;</p>	</i></strong>
+	</div>
+	<div class="news_content border" >
+	NOUVEAU Service à Paris-Nord : SNCF Porte-à-Porte vous permet de réserver un taxi à prix fixe à partir de 9,90 euros, avec votre billet de train. Prise en charge garantie sans attente et sans supplément y compris en cas de retard du train à l'arrivée. Consultez la rubrique "Comment venir et repartir de la gare / Taxis". Informations et réservations sur http://pap.sncf.com<br />	</div>
+</div> 
+<div id="global_contain">
+	<div id="list_page">
+	<div class="home"><a href="http://www.gares-en-mouvement.com/fr/">Choix de gare</a></div>
+    
+        
+    <ul class="menu" id="menu">
+    
+	<li class="accueil border_top2"><a href="http://www.gares-en-mouvement.com/fr/frpno/accueil/">Accueil gare</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/votre-gare/">Votre gare</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/gare-en-mobilite/">La gare sur votre mobile</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/evenement/">Ev&egrave;nements</a></li>
+<li>Comment venir et repartir de la gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/quartier/" title="Comment venir et repartir de la gare - plan des abords de gare">Plan des abords de gare</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/acces/" title="Comment venir et repartir de la gare - Accès">Accès</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/transport/" title="Comment venir et repartir de la gare - Transports en commun">Transports en commun</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/velo_moto/" title="Comment venir et repartir de la gare - Vélos et motos">Vélos et motos</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/taxis/" title="Comment venir et repartir de la gare - Taxis">Taxis</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/acces-gare/voiture/" title="Comment venir et repartir de la gare - Voiture">Voiture</a></li>
+</ul></li>
+<li class="active_menu">Les horaires en temps r&eacute;el <ul class="tvs_sub_active border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/horaires-temps-reel/dep/" title="Les horaires en temps r&eacute;el  - d&eacute;parts trains">D&eacute;parts trains</a></li>
+<li class="active"><a href="http://www.gares-en-mouvement.com/fr/frpno/horaires-temps-reel/arr/" title="Les horaires en temps r&eacute;el  - arriv&eacute;es trains (page actuelle)">Arriv&eacute;es trains</a></li>
+</ul></li>
+<li>Commerces<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/alimentation/" title="Commerces - Alimentation">Alimentation</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/autres/" title="Commerces - Autres">Autres</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/banque/" title="Commerces - Banque">Banque</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/fleuriste/" title="Commerces - Fleuriste">Fleuriste</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/loisirs/" title="Commerces - Loisirs - Voyages">Loisirs - Voyages</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/mode/" title="Commerces - Mode">Mode</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/presse/" title="Commerces - Presse">Presse</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/sante/" title="Commerces - Hygiène - Santé - Beauté">Hygiène - Santé - Beauté</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/commerces/autour_gare/" title="Commerces - autour de la gare">Autour de la gare</a></li>
+</ul></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/diaporama/">Diaporama</a></li>
+<li>Services en gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/services-en-gare/accueil/" title="Services en gare - Accueils">Accueils</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/services-en-gare/service/" title="Services en gare - Services">Services</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/services-en-gare/vente/" title="Services en gare - Ventes">Ventes</a></li>
+</ul></li>
+<li>Plans<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/plans/visite-virtuelle/" title="Plans - Visite virtuelle guid&eacute;e">Visite virtuelle guid&eacute;e</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/plans/quartier/" title="Plans - abords de gare">Abords de gare</a></li>
+</ul></li>
+<li class="border_bottom">Autour de la gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frpno/autour-de-la-gare/proximite/" title="Autour de la gare - a proximit&eacute;">A proximit&eacute;</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frpno/autour-de-la-gare/ville/" title="Autour de la gare - vers la ville">Vers la ville</a></li>
+</ul></li>
+	
+    </ul>
+
+    </div><!-- fin div list_page -->
+    <div id="content_wrapper" class="page">
+	
+        <div id="content" class="cls border">
+            <ul class="sous_cat"><li class="active_sub_page last"><a href="http://www.gares-en-mouvement.com/fr/frpno/horaires-temps-reel/arr/">Grandes Lignes</a></li></ul><div class="cls"></div><hr />			<div align="right" style="margin-bottom:6px;"><a href="http://www.gares-en-mouvement.com/fr/frpno/autour-de-la-gare/proximite/">Avec TripAdvisor et PagesJaunes, trouvez un h&ocirc;tel, un restaurant, ... autour de la gare</a></div><br  />
+			
+			<h2>Prochaines arrivées à Paris Nord</h2>
+
+			<p class="infostempsreel_maj">
+		
+			</p><!-- fin div infostempsreel_maj -->
+             
+			<div class="infostempsreel_tgda">
+						             <div class="infostempsreel_legende">
+			<img src="http://www.gares-en-mouvement.com/resources/images/gem_bus_legende2.gif" alt="Pictogramme bus" style="vertical-align:middle;margin:0 5px 5px 5px" width="21" height="19" />
+			Cars / autocars à la gare routière ou sur le parvis de la gare			            </div>
+						<table class="tab_horaires_tps_reel" summary="Le tableau vous donne les informations concernant les trains partant de Paris Nord. La première colonne indique le type du train, la seconde le numéro, la troisième l'heure, la quatrième la destination, la cinquième la situation et la dernière la voie en gare" cellspacing="0" cellpadding="0" border="0"><caption>Tableau des trains au départ de Paris Nord</caption>
+								<thead>
+									<tr>
+										<th id="marque_transporteur" colspan="2">Transporteur</th>
+										
+										<th id="numero_id"><abbr title="num&eacute;ro">Num</abbr></th>
+										<th id="heure_id">Heure</th>
+										<th id="originedestination_id">Provenance</th>
+										<th id="situation_id" scope="col">Information</th>
+										<th id="voie_id">Voie</th>
+									</tr>
+								</thead>
+								<tbody><tr class="tvs_tr_grand_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_0">TER</td>
+<td class="tvs_td_numero" headers="train_id_0 numero_id">847912</td>
+<td class="tvs_td_heure" headers="train_id_0 heure_id">17<abbr title="heure">h</abbr>53</td>
+<td class="tvs_td_originedestination" headers="train_id_0 originedestination_id">ST-QUENTIN</td>
+<td class="tvs_td_situation" headers="train_id_0 situation_id">ARRIV&Eacute;</td>
+<td class="tvs_td_voie" headers="train_id_0 voie_id">16</td>
+</tr>
+<tr class="tvs_tr_grand_vert_fonce"><td class="tvs_td_marque"></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_1"></td>
+<td class="tvs_td_numero" headers="train_id_1 numero_id">9032</td>
+<td class="tvs_td_heure" headers="train_id_1 heure_id">17<abbr title="heure">h</abbr>56</td>
+<td class="tvs_td_originedestination" headers="train_id_1 originedestination_id">LONDON</td>
+<td class="tvs_td_situation" headers="train_id_1 situation_id">ARRIV&Eacute;</td>
+<td class="tvs_td_voie" headers="train_id_1 voie_id">5</td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_2"></td>
+<td class="tvs_td_numero" headers="train_id_2 numero_id">9032</td>
+<td class="tvs_td_heure" headers="train_id_2 heure_id">17<abbr title="heure">h</abbr>56</td>
+<td class="tvs_td_originedestination" headers="train_id_2 originedestination_id">ST PANCRAS</td>
+<td class="tvs_td_situation" headers="train_id_2 situation_id">ARRIV&Eacute;</td>
+<td class="tvs_td_voie" headers="train_id_2 voie_id">5</td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_3">Thalys</td>
+<td class="tvs_td_numero" headers="train_id_3 numero_id">9362</td>
+<td class="tvs_td_heure" headers="train_id_3 heure_id">18<abbr title="heure">h</abbr>08</td>
+<td class="tvs_td_originedestination" headers="train_id_3 originedestination_id">BRUXELLES-M.</td>
+<td class="tvs_td_situation" headers="train_id_3 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_3 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_4">TER</td>
+<td class="tvs_td_numero" headers="train_id_4 numero_id">849934</td>
+<td class="tvs_td_heure" headers="train_id_4 heure_id">18<abbr title="heure">h</abbr>10</td>
+<td class="tvs_td_originedestination" headers="train_id_4 originedestination_id">LAON</td>
+<td class="tvs_td_situation" headers="train_id_4 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_4 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_5">TER</td>
+<td class="tvs_td_numero" headers="train_id_5 numero_id">847824</td>
+<td class="tvs_td_heure" headers="train_id_5 heure_id">18<abbr title="heure">h</abbr>11</td>
+<td class="tvs_td_originedestination" headers="train_id_5 originedestination_id">COMPIEGNE</td>
+<td class="tvs_td_situation" headers="train_id_5 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_5 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_6"></td>
+<td class="tvs_td_numero" headers="train_id_6 numero_id">7142</td>
+<td class="tvs_td_heure" headers="train_id_6 heure_id">18<abbr title="heure">h</abbr>14</td>
+<td class="tvs_td_originedestination" headers="train_id_6 originedestination_id">VALENCIENNES</td>
+<td class="tvs_td_situation" headers="train_id_6 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_6 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_7">TGV</td>
+<td class="tvs_td_numero" headers="train_id_7 numero_id">7342</td>
+<td class="tvs_td_heure" headers="train_id_7 heure_id">18<abbr title="heure">h</abbr>14</td>
+<td class="tvs_td_originedestination" headers="train_id_7 originedestination_id">DUNKERQUE-V.</td>
+<td class="tvs_td_situation" headers="train_id_7 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_7 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_8"></td>
+<td class="tvs_td_numero" headers="train_id_8 numero_id">7572</td>
+<td class="tvs_td_heure" headers="train_id_8 heure_id">18<abbr title="heure">h</abbr>19</td>
+<td class="tvs_td_originedestination" headers="train_id_8 originedestination_id">RANGDUFLIERS</td>
+<td class="tvs_td_situation" headers="train_id_8 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_8 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_9">TER</td>
+<td class="tvs_td_numero" headers="train_id_9 numero_id">847440</td>
+<td class="tvs_td_heure" headers="train_id_9 heure_id">18<abbr title="heure">h</abbr>23</td>
+<td class="tvs_td_originedestination" headers="train_id_9 originedestination_id">BEAUVAIS</td>
+<td class="tvs_td_situation" headers="train_id_9 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_9 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_10">Intercit&eacute;s</td>
+<td class="tvs_td_numero" headers="train_id_10 numero_id">12026</td>
+<td class="tvs_td_heure" headers="train_id_10 heure_id">18<abbr title="heure">h</abbr>32</td>
+<td class="tvs_td_originedestination" headers="train_id_10 originedestination_id">AMIENS</td>
+<td class="tvs_td_situation" headers="train_id_10 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_10 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_11">Thalys</td>
+<td class="tvs_td_numero" headers="train_id_11 numero_id">9464</td>
+<td class="tvs_td_heure" headers="train_id_11 heure_id">18<abbr title="heure">h</abbr>39</td>
+<td class="tvs_td_originedestination" headers="train_id_11 originedestination_id">BRUXELLES</td>
+<td class="tvs_td_situation" headers="train_id_11 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_11 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_12">Thalys</td>
+<td class="tvs_td_numero" headers="train_id_12 numero_id">9364</td>
+<td class="tvs_td_heure" headers="train_id_12 heure_id">18<abbr title="heure">h</abbr>39</td>
+<td class="tvs_td_originedestination" headers="train_id_12 originedestination_id">AMSTERDAM</td>
+<td class="tvs_td_situation" headers="train_id_12 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_12 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_13">TER</td>
+<td class="tvs_td_numero" headers="train_id_13 numero_id">849936</td>
+<td class="tvs_td_heure" headers="train_id_13 heure_id">18<abbr title="heure">h</abbr>40</td>
+<td class="tvs_td_originedestination" headers="train_id_13 originedestination_id">LAON</td>
+<td class="tvs_td_situation" headers="train_id_13 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_13 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_14">TGV</td>
+<td class="tvs_td_numero" headers="train_id_14 numero_id">7074</td>
+<td class="tvs_td_heure" headers="train_id_14 heure_id">18<abbr title="heure">h</abbr>47</td>
+<td class="tvs_td_originedestination" headers="train_id_14 originedestination_id">LILLE FLANDR</td>
+<td class="tvs_td_situation" headers="train_id_14 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_14 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_15">TER</td>
+<td class="tvs_td_numero" headers="train_id_15 numero_id">848526</td>
+<td class="tvs_td_heure" headers="train_id_15 heure_id">18<abbr title="heure">h</abbr>50</td>
+<td class="tvs_td_originedestination" headers="train_id_15 originedestination_id">ST-JUST</td>
+<td class="tvs_td_situation" headers="train_id_15 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_15 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_16">Intercit&eacute;s</td>
+<td class="tvs_td_numero" headers="train_id_16 numero_id">12326</td>
+<td class="tvs_td_heure" headers="train_id_16 heure_id">18<abbr title="heure">h</abbr>53</td>
+<td class="tvs_td_originedestination" headers="train_id_16 originedestination_id">ST-QUENTIN</td>
+<td class="tvs_td_situation" headers="train_id_16 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_16 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/sncf_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_17">TER</td>
+<td class="tvs_td_numero" headers="train_id_17 numero_id">847444</td>
+<td class="tvs_td_heure" headers="train_id_17 heure_id">18<abbr title="heure">h</abbr>53</td>
+<td class="tvs_td_originedestination" headers="train_id_17 originedestination_id">BEAUVAIS</td>
+<td class="tvs_td_situation" headers="train_id_17 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_17 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_clair"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/eurostar_logo_vert_clair.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_18">Eurostar</td>
+<td class="tvs_td_numero" headers="train_id_18 numero_id">9036</td>
+<td class="tvs_td_heure" headers="train_id_18 heure_id">18<abbr title="heure">h</abbr>56</td>
+<td class="tvs_td_originedestination" headers="train_id_18 originedestination_id">LONDON</td>
+<td class="tvs_td_situation" headers="train_id_18 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_18 voie_id"></td>
+</tr>
+<tr class="tvs_tr_normal_vert_fonce"><td class="tvs_td_marque"><img src="http://www.gares-en-mouvement.com/resources/images/tvs/eurostar_logo_vert_fonce.gif" /></td>
+<td class="tvs_td_type" headers="type_id" id="train_id_19">Eurostar</td>
+<td class="tvs_td_numero" headers="train_id_19 numero_id">9036</td>
+<td class="tvs_td_heure" headers="train_id_19 heure_id">18<abbr title="heure">h</abbr>56</td>
+<td class="tvs_td_originedestination" headers="train_id_19 originedestination_id">ST PANCRAS</td>
+<td class="tvs_td_situation" headers="train_id_19 situation_id"></td>
+<td class="tvs_td_voie" headers="train_id_19 voie_id"></td>
+</tr>
+</tbody></table>						 
+            <h3 class="az">Informations en temps r&eacute;el</h3>
+				<div class="infostempsreel_ticc border">
+                <ul id="tic"><li>MARDI 29 AVRIL POUR LA TRANQUILLITE DE CHACUN, VEUILLEZ NE PAS TELEPHONER A BORD DES VOITURES, UTILISEZ PLUTOT LES PLATES-FORMES</li><li>INFO TRAFIC : 3635 DITES MON TRAIN (0,34 EURO/MIN), WWW.INFOLIGNES.COM ET SUR L'APPLI MOBILE SNCF DIRECT</li></ul>            </div>
+                        
+            </div><!-- fin infostempsreel_tgda -->              
+        </div><!-- fin div content -->
+    </div><!-- fin div content_wrapper -->
+	<div id="pub">
+
+<div class="mobile">
+
+<span style="display:block;"><img src="http://www.gares-en-mouvement.com/resources/images/bck_pubL.jpg"  /></span>
+
+<br />
+<span>
+Profitez de gares-en-mouvement sur votre mobile gr&acirc;ce &agrave; l'application <strong>Gares En Direct</strong><br /><br />
+</span>
+
+
+<a href="https://play.google.com/store/apps/details?id=com.fingermind.gedirect
+" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/googleplay.jpg" /></a>
+
+<br /><br />
+
+<a href="https://itunes.apple.com/fr/app/garesendirect/id493372387?mt=8" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/appstore.jpg" /></a>
+
+
+</div>
+
+<div class="anim">
+	<div class="banniere">
+	
+	<a href="http://www.gares360.com" target="_blank" title="Visiter le site gares360.com (nouvelle fen&ecirc;tre)">
+	<img src="http://www.gares-en-mouvement.com/resources/images/pub_fixe.gif" alt="&laquo; GARES 360&deg; &raquo; : pr&eacute;parez votre venue en gare gr&acirc;ce aux visites virtuelles guid&eacute;es." width="160" height="363" /></a>
+	</div><!-- fin div banniere -->
+</div>
+
+
+
+</div><!-- fin div publicite -->	
+
+</div><!-- fin div global_contain -->
+
+<div class="clearfooter"></div>
+
+</div><!-- fin div wrapper -->
+<div id="footer">
+<div id="footer_content">
+    <div class="sncf"><a href="http://www.sncf.com/" target="_blank" class="sncf" rel="nofollow"><img title="Visiter le site de la SNCF (nouvelle fen&ecirc;tre)" src="http://www.gares-en-mouvement.com/resources/images/sncf_logo.gif" alt="Visiter le site de la SNCF" width="36" height="20" /></a>
+    </div><!-- fin div sncf -->
+	<div id="outil">
+				<ul class="footer">
+						<li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frpno/gare-en-mobilite/">La gare sur votre mobile</a></li><li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frpno/aide/">Aide</a></li><li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frpno/mentions/">Mentions l&#233;gales</a></li><li><a accesskey="6" href="http://www.gares-en-mouvement.com/fr/frpno/plan-du-site/">Plan du site</a></li>					</ul>
+					<br />
+					<ul class="footer">
+					<li class="li_br"><a href="http://aide.voyages-sncf.com/sites/aide.voyages-sncf.com/files/imce/pdf/Fiche_Contactez-nous.pdf?rfrr=FAQ%3AAideTrain%3Asuite-mon-achat%3Areclamation-et-demande-de-remboursement_body_formulaire%20de%20r%C3%A9clamation" target="_blank" title="Formulaire CONTACTEZ-NOUS (PDF, 25Ko, nouvelle fen&ecirc;tre)">Formulaire CONTACTEZ-NOUS</a> </li>
+					<li class="li_br"><a href="http://www.infolignes.com" target="_blank" title="Visiter le site Infolignes (nouvelle fen&ecirc;tre)" rel="nofollow">Infolignes</a> </li>
+					<li class="li_br"><a href="http://www.tripadvisor.fr/" target="_blank" title="Visiter le site TripAdvisor (nouvelle fen&ecirc;tre)" rel="nofollow">TripAdvisor</a></li>
+					<li><a href="http://www.pagesjaunes.fr/" target="_blank" title="pagesjaunes.fr annuaire des professionnels et des particuliers (nouvelle fen&ecirc;tre)" rel="nofollow">PagesJaunes</a></li>
+				</ul>
+				</div>
+			<!-- fin div outil -->
+						<div id="carousel_container">
+				<div id="carousel_inner" >
+					<noscript>
+                        <ul class="carousel_ul carousel_off"><li class="li_br"><a href="http://www.intercites.sncf.com" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" target="_blank">INTERCIT&Eacute;S</a></li><li class="li_br"><a href="http://www.eurostar.com" title="Eurostar (nouvelle fen&ecirc;tre)" target="_blank">Eurostar</a></li><li class="li_br"><a href="http://www.idtgv.com" title="iDTGV (nouvelle fen&ecirc;tre)" target="_blank">iDTGV</a></li><li class="li_br"><a href="http://www.tgv-lyria.com" title="TGV Lyria (nouvelle fen&ecirc;tre)" target="_blank">TGV Lyria</a></li><li class="li_br"><a href="http://www.ter-sncf.com" title="TER (nouvelle fen&ecirc;tre)" target="_blank">TER</a></li><li class="li_br"><a href="http://www.tgv.com" title="TGV (nouvelle fen&ecirc;tre)" target="_blank">TGV</a></li><li class="li_br"><a href="http://www.thalys.com" title="Thalys (nouvelle fen&ecirc;tre)" target="_blank">Thalys</a></li><li class="li_br"><a href="http://www.transilien.com" title="Transilien (nouvelle fen&ecirc;tre)" target="_blank">Transilien</a></li><li class="li_br"><a href="http://www.velo.sncf.com" title="Vélo SNCF (nouvelle fen&ecirc;tre)" target="_blank">Vélo SNCF</a></li><li class="li_br"><a href="http://www.thello.com/" title="Thello (nouvelle fen&ecirc;tre)" target="_blank">Thello</a></li>                        </ul>                    
+					</noscript>
+					<ul class="carousel_ul" style="display:none;">
+						<li><a href="http://www.tgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/06_logo_tgv.gif" alt="TGV" title="TGV (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.ter-sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/05_logo_ter.gif" alt="TER" title="TER (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.velo.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/09_logo_velo.gif" alt="Vélo SNCF" title="Vélo SNCF (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.idtgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/03_logo_idtgv.gif" alt="iDTGV" title="iDTGV (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.eurostar.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/02_logo_eurostar.gif" alt="Eurostar" title="Eurostar (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.tgv-lyria.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/04_logo_lyria.gif" alt="TGV Lyria" title="TGV Lyria (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.thello.com/"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/10_logo_thello.gif" alt="Thello" title="Thello (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.intercites.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/01_logo_intercites.gif" alt="INTERCIT&Eacute;S" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.transilien.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/08_logo_transilien.gif" alt="Transilien" title="Transilien (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.thalys.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/07_logo_thalys.gif" alt="Thalys" title="Thalys (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+					</ul>
+				</div><!-- fin div carousel_inner -->
+			</div><!-- fin div carousel_container -->
+            	</div><!-- fin div footer_content -->
+</div><!-- fin div footer -->
+</body></html>

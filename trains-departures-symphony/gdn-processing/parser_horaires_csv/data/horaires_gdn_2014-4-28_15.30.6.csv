@@ -1,0 +1,28 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER D,Goussainville,15h32
+Transilien,RER E,Haussmann Saint-Lazare,15h32
+Transilien,25749,Persan-Beaumont,15h34
+Transilien,RER E,Chelles-Gournay,15h35
+Transilien,RER B,St-Rémy-les-Chevreuse,15h35
+Transilien,RER D,Corbeil-Essonnes,15h36
+Transilien,RER B,Mitry-Claye,15h36
+Transilien,RER B,Massy Palaiseau RER,15h38
+Transilien,RER D,Orry la Ville-Coye,15h38
+Transilien,23481,Pontoise,15h41
+Transilien,RER D,Melun,15h42
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,15h42
+TGV,7559,Boulogne-Ville,15h46
+Thalys,9361,Bruxelles Midi,16h01
+Thalys,9461,Cologne Hbf,16h01
+Intercités,12015,Amiens,16h04
+TER,47427,Beauvais,16h05
+TER,47907,Saint-Quentin,16h07
+TER,48517,Saint-Just en Chaussée,16h10
+Eurostar,9043,London St. Pancras EST,16h13
+TGV,7061,Lille-Flandres,16h16
+Intercités,12313,Maubeuge,16h37
+TGV,7265,Rang du Fliers-Verton,16h46
+TER,47813,Compiègne,16h49
+TGV,7137,Valenciennes,16h52
+TGV,7339,Dunkerque,17h22
+Thalys,9369,Amsterdam CS,17h25

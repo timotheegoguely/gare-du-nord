@@ -1,0 +1,32 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER B,Massy Palaiseau RER,19h41
+Transilien,23583,Pontoise,19h41
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,19h42
+Transilien,RER D,Melun,19h42
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,19h42
+Transilien,RER E,Haussmann Saint-Lazare,19h43
+Transilien,25113,Sarcelles Saint-Brice,19h43
+Transilien,RER D,Villiers le Bel-Gonesse,19h43
+Transilien,RER B,Robinson,19h44
+Transilien,RER B,Mitry-Claye,19h45
+Transilien,24039,Saint-Leu la Forêt,19h45
+Transilien,RER E,Chelles-Gournay,19h46
+TGV,7083,Lille-Flandres,19h46
+Transilien,RER D,Goussainville,19h47
+Transilien,RER B,St-Rémy-les-Chevreuse,19h47
+TER,47823,Compiègne,19h49
+TGV,7151,Valenciennes,19h52
+TER,47449,Beauvais,20h01
+Intercités,12025,Amiens,20h04
+TER,47913,Saint-Quentin,20h07
+TER,49937,Laon,20h08
+TER,48537,Saint-Just en Chaussée,20h10
+Eurostar,9059,London St. Pancras EST,20h13
+TER,47615,Creil,20h49
+Thalys,9389,Bruxelles Midi,20h55
+TER,48541,Breteuil Embranchement,21h28
+Thalys,9401,Essen Hbf,06h01
+Thalys,9303,Amsterdam CS,06h25
+Thalys,9403,Bruxelles-National-Aéroport,06h25
+TGV,7505,Boulogne-Ville,06h46
+TGV,7205,Dunkerque,06h46

@@ -1,0 +1,30 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,07h42
+Transilien,RER D,Melun,07h42
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,07h42
+Eurostar,9009,London St. Pancras EST,07h43
+Transilien,RER E,Haussmann Saint-Lazare,07h43
+Transilien,25017,Sarcelles Saint-Brice,07h43
+Transilien,RER D,Villiers le Bel-Gonesse,07h43
+Transilien,RER B,Robinson,07h44
+Transilien,RER D,Corbeil-Essonnes,07h45
+Transilien,RER B,La Plaine-Stade-de-France,07h45
+Transilien,24005,Saint-Leu la Forêt,07h45
+TGV,7513,Boulogne-Ville,07h46
+Transilien,RER E,Chelles-Gournay,07h46
+TGV,7511,Dunkerque,07h46
+Transilien,RER D,Goussainville,07h47
+Transilien,RER B,St-Rémy-les-Chevreuse,07h47
+TER,47605,Creil,07h49
+TGV,7105,Valenciennes,07h52
+Thalys,9313,Bruxelles Midi,08h01
+Thalys,9413,Cologne Hbf,08h01
+Intercités,12303,Saint-Quentin,08h07
+TGV,7015,Lille-Flandres,08h16
+Thalys,9315,Amsterdam CS,08h25
+Intercités,12007,Amiens,08h28
+TER,49911,Laon,08h34
+TER,47803,Compiègne,08h49
+TER,47411,Beauvais,08h50
+TGV,7223,Calais-Ville,09h46
+Intercités,12307,Maubeuge,10h37

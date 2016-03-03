@@ -1,0 +1,174 @@
+Type,Numéro,Destination,Horaire
+Transilien,25401,Luzarches,05h19
+Transilien,24301,Valmondois,05h26
+Transilien,25701,Persan-Beaumont,05h34
+Thalys,9401,Essen Hbf,06h01
+TER,49903,Laon,06h03
+TER,47401,Beauvais,06h05
+Thalys,9303,Amsterdam CS,06h25
+Thalys,9403,Bruxelles-National-Aéroport,06h25
+Intercités,12001,Amiens,06h28
+TER,47901,Saint-Quentin,06h31
+TGV,7505,Boulogne-Ville,06h46
+TGV,7205,Dunkerque,06h46
+TER,47801,Compiègne,06h49
+Thalys,9305,Bruxelles Midi,06h55
+Intercités,2003,Abbeville,06h58
+TER,48501,Saint-Just en Chaussée,07h10
+Eurostar,9007,London St. Pancras EST,07h13
+TGV,7007,Lille-Flandres,07h16
+Thalys,9309,Amsterdam CS,07h25
+Thalys,9409,Bruxelles Midi,07h25
+Transilien,25423,Luzarches,07h25
+Transilien,23423,Pontoise,07h26
+Intercités,12005,Amiens,07h28
+Transilien,25015,Sarcelles Saint-Brice,07h28
+TER,47601,Creil,07h31
+TER,47407,Beauvais,07h35
+Intercités,12301,Maubeuge,07h37
+Eurostar,9009,London St. Pancras EST,07h43
+TGV,7513,Boulogne-Ville,07h46
+TGV,7511,Dunkerque,07h46
+TGV,7105,Valenciennes,07h52
+Thalys,9413,Cologne Hbf,08h01
+Intercités,12303,Saint-Quentin,08h07
+TGV,7015,Lille-Flandres,08h16
+TER,49911,Laon,08h34
+TER,47803,Compiègne,08h49
+TER,47411,Beauvais,08h50
+Thalys,9319,Bruxelles Midi,09h01
+Intercités,12305,Saint-Quentin,09h07
+TGV,7223,Calais-Ville,09h46
+Intercités,2009,Boulogne-Ville,09h58
+Intercités,12307,Maubeuge,10h37
+TGV,7113,Valenciennes,10h52
+Transilien,24625,Persan-Beaumont,10h56
+TER,47417,Beauvais,11h01
+TER,48507,Saint-Just en Chaussée,11h10
+Eurostar,9023,London St. Pancras EST,11h13
+Thalys,9333,Bruxelles Midi,11h25
+TGV,7535,Rang du Fliers-Verton,11h46
+TER,49917,Laon,11h58
+TER,47419,Beauvais,12h01
+Thalys,9437,Essen Hbf,12h01
+Intercités,12309,Saint-Quentin,12h07
+TER,47609,Creil,12h10
+Thalys,9339,Amsterdam CS,12h25
+Intercités,12011,Amiens,12h28
+Eurostar,9029,London St. Pancras EST,12h43
+TGV,7043,Lille-Flandres,12h46
+TER,47807,Compiègne,12h49
+TGV,7321,Dunkerque,12h52
+Thalys,9341,Bruxelles Midi,12h55
+Eurostar,9031,London St. Pancras EST,13h13
+TGV,7045,Lille-Flandres,13h16
+TER,49921,Laon,13h26
+Intercités,2013,Abbeville,13h59
+TER,47905,Saint-Quentin,14h07
+TER,47613,Creil,14h19
+Thalys,9351,Amsterdam CS,14h25
+Thalys,9451,Bruxelles Midi,14h25
+TER,47809,Compiègne,14h49
+TGV,7331,Dunkerque,14h52
+TGV,7131,Valenciennes,14h52
+Transilien,25453,Luzarches,15h04
+Transilien,23479,Pontoise,15h11
+Eurostar,9039,London St. Pancras EST,15h13
+Thalys,9357,Amsterdam CS,15h25
+TER,49925,Laon,15h30
+TGV,7559,Boulogne-Ville,15h46
+Transilien,24635,Persan-Beaumont,15h56
+Transilien,25067,Sarcelles Saint-Brice,15h58
+Thalys,9361,Bruxelles Midi,16h01
+Thalys,9461,Cologne Hbf,16h01
+Intercités,12015,Amiens,16h04
+TER,47427,Beauvais,16h05
+TER,47907,Saint-Quentin,16h07
+TER,48517,Saint-Just en Chaussée,16h10
+Eurostar,9043,London St. Pancras EST,16h13
+TGV,7061,Lille-Flandres,16h16
+TER,49927,Laon,16h31
+Intercités,12313,Maubeuge,16h37
+TGV,7265,Rang du Fliers-Verton,16h46
+TER,47813,Compiègne,16h49
+TGV,7137,Valenciennes,16h52
+Transilien,24643,Persan-Beaumont,16h53
+Thalys,9365,Bruxelles Midi,16h55
+Transilien,25465,Luzarches,16h55
+Transilien,23507,Pontoise,16h56
+Intercités,2017,Boulogne-Ville,17h01
+TER,47909,Saint-Quentin,17h04
+TER,47433,Beauvais,17h05
+TER,48523,Amiens,17h07
+Eurostar,9047,London St. Pancras EST,17h13
+TGV,7067,Lille-Flandres,17h16
+TER,47815,Compiègne,17h19
+TGV,7339,Dunkerque,17h22
+Thalys,9369,Amsterdam CS,17h25
+Transilien,21575,Crépy en Valois,17h31
+TER,47435,Beauvais,17h35
+Intercités,2315,Cambrai,17h37
+Transilien,24341,Valmondois,17h38
+TGV,7269,Dunkerque,17h46
+TGV,7569,Rang du Fliers-Verton,17h46
+TER,47817,Compiègne,17h49
+TER,49931,Laon,17h51
+TGV,7141,Valenciennes,17h52
+Thalys,9473,Essen Hbf,17h58
+Intercités,12019,Amiens,18h01
+TER,47911,Saint-Quentin,18h04
+Eurostar,9051,London St. Pancras EST,18h13
+TGV,7471,Lille-Flandres,18h16
+TGV,7271,Tourcoing,18h16
+TGV,7343,Hazebrouck,18h22
+Thalys,9375,Ostende,18h25
+TER,48529,Longueau,18h28
+TER,47441,Beauvais,18h35
+Intercités,12319,Maubeuge,18h37
+Transilien,24349,Valmondois,18h38
+TGV,7277,Boulogne-Ville,18h46
+TER,47821,Compiègne,18h49
+TER,49935,Laon,18h51
+TGV,7345,Dunkerque,18h52
+TGV,7145,Valenciennes,18h52
+Thalys,9377,Bruxelles Midi,18h55
+Intercités,2021,Boulogne-Ville,19h04
+TER,47445,Beauvais,19h05
+Intercités,12321,Saint-Quentin,19h07
+Transilien,24353,Valmondois,19h08
+TER,48533,Breteuil Embranchement,19h10
+Eurostar,9055,London St. Pancras EST,19h13
+TGV,7281,Tourcoing,19h16
+Thalys,9381,Amsterdam CS,19h25
+Intercités,12023,Amiens,19h28
+Thalys,9483,Liège-Guillemins,19h34
+Intercités,12323,Maubeuge,19h37
+TGV,7083,Lille-Flandres,19h46
+TER,47823,Compiègne,19h49
+TGV,7151,Valenciennes,19h52
+Transilien,24677,Persan-Beaumont,19h56
+TER,47449,Beauvais,20h01
+Intercités,12025,Amiens,20h04
+TER,47913,Saint-Quentin,20h07
+TER,49937,Laon,20h08
+TER,48537,Saint-Just en Chaussée,20h10
+Eurostar,9059,London St. Pancras EST,20h13
+TER,47615,Creil,20h49
+TGV,7091,Lille-Flandres,20h52
+Thalys,9389,Bruxelles Midi,20h55
+Transilien,24681,Persan-Beaumont,20h56
+TER,47451,Beauvais,21h01
+Transilien,25499,Luzarches,21h04
+TER,47915,Saint-Quentin,21h07
+Transilien,23593,Pontoise,21h11
+Eurostar,9063,London St. Pancras EST,21h13
+TER,49939,Laon,21h16
+TER,48541,Breteuil Embranchement,21h28
+Transilien,25793,Persan-Beaumont,21h34
+Transilien,23595,Pontoise,21h41
+Thalys,9395,Bruxelles Midi,21h55
+Transilien,25501,Luzarches,22h04
+Transilien,23597,Pontoise,22h11
+TGV,7097,Lille-Flandres,22h21
+TER,48543,Breteuil Embranchement,22h28
+TER,47919,Saint-Quentin,22h37

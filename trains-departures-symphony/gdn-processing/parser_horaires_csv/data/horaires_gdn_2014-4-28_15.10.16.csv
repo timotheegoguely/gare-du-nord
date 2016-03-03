@@ -1,0 +1,30 @@
+Type,Numéro,Destination,Horaire
+Transilien,23479,Pontoise,15h11
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,15h12
+Transilien,RER D,Melun,15h12
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,15h12
+Eurostar,9039,London St. Pancras EST,15h13
+Transilien,RER B,Robinson,15h14
+Transilien,RER D,Goussainville,15h17
+Transilien,RER E,Haussmann Saint-Lazare,15h17
+Transilien,25225,Montsoult-Maffliers,15h19
+Transilien,RER E,Chelles-Gournay,15h20
+Transilien,RER B,St-Rémy-les-Chevreuse,15h20
+Transilien,RER B,Mitry-Claye,15h21
+Transilien,RER B,Massy Palaiseau RER,15h23
+Transilien,RER E,Tournan,15h24
+Thalys,9357,Amsterdam CS,15h25
+TER,49925,Laon,15h30
+TGV,7559,Boulogne-Ville,15h46
+Thalys,9361,Bruxelles Midi,16h01
+Thalys,9461,Cologne Hbf,16h01
+Intercités,12015,Amiens,16h04
+TER,47427,Beauvais,16h05
+TER,47907,Saint-Quentin,16h07
+TER,48517,Saint-Just en Chaussée,16h10
+TGV,7061,Lille-Flandres,16h16
+Intercités,12313,Maubeuge,16h37
+TGV,7265,Rang du Fliers-Verton,16h46
+TER,47813,Compiègne,16h49
+TGV,7137,Valenciennes,16h52
+TGV,7339,Dunkerque,17h22

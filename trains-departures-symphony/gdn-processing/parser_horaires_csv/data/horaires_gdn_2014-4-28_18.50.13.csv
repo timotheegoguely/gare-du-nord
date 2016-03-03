@@ -1,0 +1,32 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER D,Corbeil-Essonnes,18h51
+TER,49935,Laon,18h51
+Transilien,RER B,Mitry-Claye,18h51
+Transilien,RER E,Tournan,18h51
+TGV,7345,Dunkerque,18h52
+TGV,7145,Valenciennes,18h52
+Transilien,RER B,Massy Palaiseau RER,18h53
+Transilien,RER D,Orry la Ville-Coye,18h53
+Transilien,24667,Persan-Beaumont,18h53
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,18h54
+Transilien,RER E,Chelles-Gournay,18h54
+Transilien,RER E,Haussmann Saint-Lazare,18h54
+Thalys,9377,Bruxelles Midi,18h55
+Transilien,25485,Luzarches,18h55
+Transilien,23563,Pontoise,18h56
+Transilien,RER B,Robinson,18h56
+Transilien,RER D,Melun,18h57
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,18h57
+Intercités,2021,Boulogne-Ville,19h04
+TER,47445,Beauvais,19h05
+Intercités,12321,Saint-Quentin,19h07
+TER,48533,Breteuil Embranchement,19h10
+Eurostar,9055,London St. Pancras EST,19h13
+TGV,7281,Tourcoing,19h16
+Thalys,9381,Amsterdam CS,19h25
+Intercités,12023,Amiens,19h28
+Thalys,9483,Liège-Guillemins,19h34
+Intercités,12323,Maubeuge,19h37
+TGV,7083,Lille-Flandres,19h46
+TER,47823,Compiègne,19h49
+TER,48537,Saint-Just en Chaussée,20h10

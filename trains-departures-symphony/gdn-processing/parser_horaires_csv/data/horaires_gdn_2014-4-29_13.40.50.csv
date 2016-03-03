@@ -1,0 +1,32 @@
+Type,Numéro,Destination,Horaire
+Transilien,23473,Pontoise,13h41
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,13h42
+Transilien,RER D,Melun,13h42
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,13h42
+Transilien,RER B,Robinson,13h44
+Transilien,RER D,Goussainville,13h47
+Transilien,RER E,Haussmann Saint-Lazare,13h47
+Transilien,25219,Montsoult-Maffliers,13h49
+Transilien,RER E,Chelles-Gournay,13h50
+Transilien,RER B,St-Rémy-les-Chevreuse,13h50
+Transilien,RER B,Mitry-Claye,13h51
+Transilien,RER B,Massy Palaiseau RER,13h53
+Transilien,RER E,Tournan,13h54
+Intercités,2013,Abbeville,13h59
+TER,47423,Beauvais,14h01
+TER,47905,Saint-Quentin,14h07
+TER,47613,Creil,14h19
+Thalys,9351,Amsterdam CS,14h25
+Thalys,9451,Bruxelles Midi,14h25
+Eurostar,9037,London St. Pancras EST,14h43
+TER,49923,Laon,14h46
+TGV,7049,Lille-Flandres,14h46
+TER,47809,Compiègne,14h49
+TGV,7331,Dunkerque,14h52
+TGV,7131,Valenciennes,14h52
+TGV,7559,Boulogne-Ville,15h46
+Thalys,9461,Cologne Hbf,16h01
+Intercités,12015,Amiens,16h04
+TER,48517,Saint-Just en Chaussée,16h10
+Intercités,12313,Maubeuge,16h37
+TGV,7265,Rang du Fliers-Verton,16h46

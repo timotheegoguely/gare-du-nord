@@ -1,0 +1,31 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER B,Laplace,09h11
+Transilien,23455,Pontoise,09h11
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,09h12
+Transilien,RER D,Melun,09h12
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,09h12
+Eurostar,9015,London St. Pancras EST,09h13
+Transilien,RER E,Haussmann Saint-Lazare,09h13
+Transilien,25037,Sarcelles Saint-Brice,09h13
+Transilien,RER D,Villiers le Bel-Gonesse,09h13
+Transilien,RER B,Robinson,09h14
+Transilien,RER D,Corbeil-Essonnes,09h15
+Transilien,RER B,Mitry-Claye,09h15
+Transilien,RER E,Chelles-Gournay,09h16
+Transilien,RER D,Goussainville,09h17
+TGV,7223,Calais-Ville,09h46
+TER,49915,Laon,09h55
+Intercités,2009,Boulogne-Ville,09h58
+TER,47415,Beauvais,10h01
+Thalys,9425,Bruxelles Midi,10h01
+Thalys,9327,Amsterdam CS,10h25
+Intercités,12307,Maubeuge,10h37
+TGV,7033,Lille-Flandres,10h46
+TER,47805,Compiègne,10h49
+TGV,7113,Valenciennes,10h52
+TER,48507,Saint-Just en Chaussée,11h10
+TGV,7535,Rang du Fliers-Verton,11h46
+Thalys,9437,Essen Hbf,12h01
+Intercités,12309,Saint-Quentin,12h07
+TER,47609,Creil,12h10
+TGV,7321,Dunkerque,12h52

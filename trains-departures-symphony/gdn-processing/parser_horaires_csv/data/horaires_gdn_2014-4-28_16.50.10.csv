@@ -1,0 +1,32 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER D,Corbeil-Essonnes,16h51
+Transilien,RER B,Mitry-Claye,16h51
+Transilien,RER E,Tournan,16h51
+TGV,7137,Valenciennes,16h52
+Transilien,RER B,Massy Palaiseau RER,16h53
+Transilien,RER D,Orry la Ville-Coye,16h53
+Transilien,24643,Persan-Beaumont,16h53
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,16h54
+Transilien,RER E,Chelles-Gournay,16h54
+Transilien,RER E,Haussmann Saint-Lazare,16h54
+Thalys,9365,Bruxelles Midi,16h55
+Transilien,25465,Luzarches,16h55
+Transilien,23507,Pontoise,16h56
+Transilien,RER B,Robinson,16h56
+Transilien,RER D,Melun,16h57
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,16h57
+Intercités,2017,Boulogne-Ville,17h01
+TER,47909,Saint-Quentin,17h04
+TER,47433,Beauvais,17h05
+TER,48523,Amiens,17h07
+Eurostar,9047,London St. Pancras EST,17h13
+TGV,7067,Lille-Flandres,17h16
+TER,47815,Compiègne,17h19
+TGV,7339,Dunkerque,17h22
+Thalys,9369,Amsterdam CS,17h25
+Intercités,2315,Cambrai,17h37
+TGV,7569,Rang du Fliers-Verton,17h46
+TER,49931,Laon,17h51
+Thalys,9473,Essen Hbf,17h58
+TGV,7271,Tourcoing,18h16
+TGV,7343,Hazebrouck,18h22

@@ -1,0 +1,30 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER D,Corbeil-Essonnes,08h21
+Transilien,RER E,Haussmann Saint-Lazare,08h21
+Transilien,RER B,La Plaine-Stade-de-France,08h21
+Transilien,RER E,Tournan,08h21
+Transilien,RER B,Laplace,08h23
+Transilien,RER D,Orry la Ville-Coye,08h23
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,08h24
+Thalys,9315,Amsterdam CS,08h25
+Transilien,25435,Luzarches,08h25
+Transilien,23443,Pontoise,08h26
+Transilien,RER B,St-Rémy-les-Chevreuse,08h26
+Transilien,RER D,Melun,08h27
+Transilien,RER B,Mitry-Claye,08h27
+Transilien,RER E,Villiers sur Marne-Le Plessis-Trévise,08h27
+Intercités,12007,Amiens,08h28
+TER,49911,Laon,08h34
+Eurostar,9013,London St. Pancras EST,08h43
+TGV,7021,Lille-Flandres,08h46
+TER,47803,Compiègne,08h49
+TER,47411,Beauvais,08h50
+Thalys,9319,Bruxelles Midi,09h01
+Intercités,12305,Saint-Quentin,09h07
+TGV,7223,Calais-Ville,09h46
+Intercités,2009,Boulogne-Ville,09h58
+Intercités,12307,Maubeuge,10h37
+TGV,7113,Valenciennes,10h52
+TER,48507,Saint-Just en Chaussée,11h10
+TGV,7535,Rang du Fliers-Verton,11h46
+Thalys,9437,Essen Hbf,12h01

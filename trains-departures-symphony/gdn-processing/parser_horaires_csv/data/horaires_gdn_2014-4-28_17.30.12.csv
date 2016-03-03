@@ -1,0 +1,33 @@
+Type,Numéro,Destination,Horaire
+Transilien,RER E,Chelles-Gournay,17h31
+Transilien,21575,Crépy en Valois,17h31
+Transilien,RER D,Goussainville,17h32
+Transilien,RER B,Robinson,17h32
+Transilien,RER B,Mitry-Claye,17h33
+Transilien,RER E,Haussmann Saint-Lazare,17h33
+TER,47435,Beauvais,17h35
+Transilien,RER B,St-Rémy-les-Chevreuse,17h35
+Transilien,RER B,Aéroport Charles-de-Gaulle 2,17h36
+Transilien,RER D,Corbeil-Essonnes,17h36
+Transilien,RER E,Tournan,17h36
+Intercités,2315,Cambrai,17h37
+Transilien,RER D,Orry la Ville-Coye,17h38
+Transilien,RER B,Orsay Ville,17h38
+Transilien,24341,Valmondois,17h38
+TGV,7269,Dunkerque,17h46
+TGV,7569,Rang du Fliers-Verton,17h46
+TER,47817,Compiègne,17h49
+TER,49931,Laon,17h51
+TGV,7141,Valenciennes,17h52
+Thalys,9473,Essen Hbf,17h58
+Intercités,12019,Amiens,18h01
+TER,47911,Saint-Quentin,18h04
+Eurostar,9051,London St. Pancras EST,18h13
+TGV,7471,Lille-Flandres,18h16
+TGV,7271,Tourcoing,18h16
+TGV,7343,Hazebrouck,18h22
+Thalys,9375,Ostende,18h25
+TER,48529,Longueau,18h28
+Intercités,12319,Maubeuge,18h37
+TGV,7277,Boulogne-Ville,18h46
+Thalys,9377,Bruxelles Midi,18h55
