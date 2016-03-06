@@ -1,6 +1,6 @@
 # #garedunord collective space
 
-<small>3D, pliages en papier, 120 cm<sup>3</sup></small>
+*3D, pliages en papier, 120 cm<sup>3</sup>*
 
 En observant les photos taguées #garedunord sur Instagram, on remarque que certains sujets apparaissent plus fréquement que d’autres, dont notamment la facade du bâtiment et la verrière intérieure.
 Tout le monde prend les mêmes photos ou presque des mêmes sujets: seuls l’heure de la journée et le filtre Instagram choisi semblent varier. À partir de ce constat, je cherche à reconstruire un espace 3D virtuel en détournant un logiciel prévu pour recomposer un modèle 3D à partir d’une suite de photos à 360° d’un objet.

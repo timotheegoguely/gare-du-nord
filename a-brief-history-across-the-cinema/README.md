@@ -1,6 +1,6 @@
 #A brief history of Gare du Nord across the cinema
 
-<small>vidéo, 4'04".</small>
+*vidéo, 4'04".*
 
 Montage vidéo réalisé à partir d’une sélection de scènes ayant été tournées à la Gare du Nord, extraites de films sortis au cinéma, sur un morceau éponyme du groupe Carte Blanche.
 
